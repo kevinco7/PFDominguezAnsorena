@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>GLP</title>
     <link
@@ -13,87 +14,125 @@
   />
 </head>
 <body>
-    <header>
-        <a href="../index.html">  <img class="logo"
-          src="../assets/image/logo navbar.png"
-          alt="logo de la barra de inicio"/>
-       </a>
-          
-  
-        <nav class="navbar">
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="../index.html" class="item__nav"> INICIO</a>
-            </li>
-            <li class="menu__item">
-              <a href="../pages/nosotros.html" class="item__nav"> NOSOTROS</a>
-            </li>
-            <li class="menu__item">
-              <a href="../pages/glp.html" class="item__nav active"> GLP</a>
-            </li>
-            <li class="menu__item">
-              <a href="../pages/servicios.html" class="item__nav"> SERVICIOS</a>
-            </li>
-            <li class="menu__item">
-              <a href="../pages/contacto.html" class="item__nav"> CONTACTO</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    <main>
-      <div class="container__text">
-
-        <h2>¿Qué es el GLP?</h2>
-        <p>
-          
-  El Gas Licuado de Petróleo (GLP) es la mezcla de gases, en su mayoría compuestos por Butano y Propano, que se obtienen a través del refinamiento del petróleo y también de procesos de separación del gas natural.
-  El GLP es combustible alternativo mas usado en el mundo por su facilidad de transporte y menor impacto en el medio ambiente. “
-  </p>
-  <img src="../assets/image/glp.JPG" alt="tanques de reserva">
-  <h2>GLP A GRANEL</h2>
-  <p>
-    El gas a granel es la mejor solución energética si estás alejado de una red canalizada de gas. 
-    A partir de este modelo de suministro, el gas se transfiere directamente del camión a las instalaciones del cliente, lo que hace posible atender hogares y a diversos segmentos de forma rápida y eficiente
+         <main>
+          <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg bg-white">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="./../index.html">
+                  <img
+                  src="./../assets/image/logo navbar.png"
+                    alt="logo de la barra de inicio"
+                  />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                      <a class="nav-link "  href="./../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./../pages/nosotros.html">NOSOTROS</a>
+                    </li><li class="nav-item">
+                      <a class="nav-link active" href="./../pages/glp.html">GLP</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./../pages/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./../pages/contacto.html">CONTACTO</a>
+                    </li>
+                    
+                    </ul>
+                           </div>
+              </div>
+            </nav>
       
-  </p>
-  <img src="../assets/image/tanquesGLP.JPG" alt="tanques de reserva">
+          
+    
+          </div>
 
-      </div>
+          <section>
+            <div class="p-5">
+              <h2>¿Qué es el GLP?</h2>
+              <p>              
+        El Gas Licuado de Petróleo (GLP) es la mezcla de gases, en su mayoría compuestos por Butano O Propano, que se obtienen a través del refinamiento del petróleo y también de procesos de separación del gas natural.
+        El GLP es combustible alternativo mas usado en el mundo por su facilidad de transporte y menor impacto en el medio ambiente. “
+        </p>
+        <img class="images img-fluid mx-auto d-block" src="../assets/image/glp.JPG" alt="2 tanques de reserva GLP">
+         </div>
+            <div class="p-5">
+              <h2>GLP A GRANEL</h2>
+              <p>
+                El gas a granel es la mejor solución energética si estás alejado de una red canalizada de gas. 
+                A partir de este modelo de suministro, el gas se transfiere directamente del camión a las instalaciones del cliente, lo que hace posible atender hogares y a diversos segmentos de forma rápida y eficiente
+              </p>
+              <img class="images img-fluid mx-auto d-block" src="../assets/image/tanquesGLP.JPG" alt=" 4 tanques de reserva GLP">
+                
+            </div>
+          </section>
+      
 
 
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class = "footer__col">
-          <h4>HARAS PAMPA</h4>
-          <ul>
-            <li><a class="item__haras" href="../index.html">INICIO</a></li>
-            <li><a class="item__haras" href="../pages/nosotros.html">NOSOTROS</a></li>
-            <li><a class="item__haras" href="../pages/glp.html">GLP</a></li>
-            <li><a class="item__haras" href="../pages/servicios.html">SERVICIOS</a></li>
-            <li><a class="item__haras" href="../pages/contacto.html">CONTACTO</a></li>
-          </ul>
-         </div>
-         <div class = "footer__col">
-          <h4>NEUQUEN</h4>
-          <li><a class="item__haras" href="#">Leguizamon 541 - Neuquen</a></li>
-          <li><a class="item__haras" href="#">299 - 4421932 </a></li>
-          <li><a class="item__haras" href="#">administracion@haraspampasrl.com.ar </a></li>
-          <li><a class="item__haras" href="#">Lunes a Viernes de 8hs a 17hs</a></li>
-          <ul>
-            <li><a href="#"></a></li>
-          </ul>
-         </div>
-         <div class = "footer__col">
-          <h4>LA PAMPA</h4>
-          <li class="item__haras" href="#">Pasaje Vega 438 - General Acha</li>
-          <li class="item__haras" href="#">2952 - 416905  </li>
-          <li class="item__haras" href="#">administracion@haraspampasrl.com.ar </li>
-          <li class="item__haras" href="#">Lunes a Viernes de 8hs a 17hs</li>
-          <ul>
-            <li><a href="#"></a></li>
-          </ul>
-         </div>
+
+
+
+
+
+          <section>
+            <div class="container-fluid  text-white p-3" style="font-family: 'Poppins', sans-serif; background:rgb(69,64,59);
+          background: radial-gradient(circle, rgb(36, 34, 33) 0%, rgba(0,0,0,1) 100%)">
+    
+              <div class="row justify-content-around text-center text-md-center">
+                <div class="col-md-4 col-sm-12 col-lg-4 text-start d-flex justify-content-center">
+                  <ul class="list-unstyled hp">
+                    <li class="fw-bold my-2 h5">HARAS PAMPA</li>
+                    <li> <a href="./../index.html" class=" textSizeFooter text-decoration-none">INICIO</a> </li>
+                    <li> <a href="./../pages/nosotros.html" class="textSizeFooter text-decoration-none"> NOSOTROS</a></li>
+                    <li> <a href="./../pages/glp.html" class="textSizeFooter text-decoration-none">GLP</a> </li>
+                    <li> <a href="./../pages/servicios.html" class=" textSizeFooter text-decoration-none">SERVICIOS</a> </li>
+                    <li> <a href="./../pages/contacto.html" class="textSizeFooter text-decoration-none">CONTACTO</a> </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-4 text-start  d-flex justify-content-around">
+                  <ul class="list-unstyled ">
+                    <li class="fw-bold my-2 h5">NEUQUEN</li>
+                    <li class="textSizeFooter noLink text-decoration-none ">Leguizamon 541 - Neuquen</a> </li>
+                    <li> <a href="tel:2994421932" class="textSizeFooter text-decoration-none ">299 - 4421932</a> </li>
+                    <li> <a href="mailito:administracion64haraspampasrl.com.ar"
+                        class="textSizeFooter text-decoration-none ">administracion@haraspampasrl.com.ar</a> </li>
+                    <li class="textSizeFooter  noLink text-decoration-none ">Lunes a Viernes de 8hs a 17hs</>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-4 text-start  d-flex justify-content-center">
+                  <ul class="list-unstyled">
+                    <li class="fw-bold my-2 h5">LA PAMPA</li>
+                    <li class="textSizeFooter  noLink text-decoration-none ">Pasaje Vega 438 - General Acha</a> </li>
+                    <li> <a href="tel:2952416905" class="textSizeFooter text-decoration-none ">2952 - 416905</a></li>
+                    <li> <a href="mailito:administracion64haraspampasrl.com.ar"
+                        class="textSizeFooter text-decoration-none ">administracion@haraspampasrl.com.ar</a> </li>
+                    <li class="textSizeFooter noLink text-decoration-none ">Lunes a Viernes de 8hs a 17hs</>
+                    </li>
+                  </ul>
+                </div>
+    
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-12 text-center pt-2">
+                  <p>&copy; 2022 Copyright <a href="#" class="text-white">Haras Pampa S.R.L.</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+      
+      
+          </div>
+        </main>
+
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
