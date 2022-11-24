@@ -11,9 +11,6 @@
     height: $alto;
 }
 
-
-$list1: $color-card-one, $color-card-two, $color-card-three; 
-
 @mixin gradient($direction, $list) { 
     background: -webkit-linear-gradient($direction, $list);
     background: -moz-linear-gradient($direction, $list);
@@ -22,6 +19,3 @@ $list1: $color-card-one, $color-card-two, $color-card-three;
   }
 
 
-  @mixin  theme-colors($light-theme:true){
-    
-  }

@@ -1,10 +1,8 @@
-body{
-  
-  font-family: $font-principal;  
+body {
+  font-family: $font-principal;
   background-color: $secondary;
-
 }
-.carousel-item{
+.carousel-item {
   max-height: 100vh;
 }
 
@@ -16,18 +14,14 @@ body{
   &-body {
     background: rgb(255, 255, 255);
     border-radius: 0 0 40px 0;
-    
   }
-  &-title{
+  &-title {
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
   }
 }
-
-
-
 
 .btn {
   margin-top: 50px;
@@ -38,7 +32,7 @@ body{
   background: #ffffff;
   border: 2px solid #ffffff;
   transition: all 0.3s;
-  box-shadow: 1px 1px 2px #0909095b, -2px -2px 5px #0909095b;  
+  box-shadow: 1px 1px 2px #0909095b, -2px -2px 5px #0909095b;
   &:hover {
     border: 1px solid #d1793d !important;
   }
@@ -48,7 +42,7 @@ body{
   }
 }
 
-.form-control{
+.form-control {
   height: 3rem;
   font-size: 30px;
 }
@@ -59,28 +53,27 @@ body{
     0 0 8px rgba(255, 140, 0, 0.6);
 }
 
-
-.contentSection{
+.contentSection {
   font-size: 16px;
- 
-  & h2{
+
+  & h2 {
     font-size: 30px;
   }
-  & .images{
+  & .images {
     height: 500px;
     width: 700px;
     border-radius: 20px;
   }
 }
 
-@media(max-width:$md){
-  .contentSection .images{
+@media (max-width: $md) {
+  .contentSection .images {
     height: 100%;
     width: 100%;
   }
 }
-@media(max-width:$sm){
-  .contentSection .images{
+@media (max-width: $sm) {
+  .contentSection .images {
     height: 300px;
     width: 100%;
   }

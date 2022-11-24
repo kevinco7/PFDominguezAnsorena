@@ -1,88 +1,99 @@
-
-.row{
-    p{
-        font-size: 1.5rem;
-       }
-       & img{
-        margin-right:10px ;
-       }
+.row {
+  p {
+    font-size: 1.5rem;
+  }
+  & img {
+    margin-right: 10px;
+  }
 }
-.bd-footer{
-    margin-top: 100px;
-   
+.bd-footer {
+  margin-top: 100px;
+}
+.textSizeFooter {
+  font-size: 14px;
+}
+hr {
+  color: $primary;
+}
+li {
+  color: $primary !important;
+  & a {
+    color: $text-color-primary;
+  }
+  & a:hover {
+    color: $primary !important;
+  }
+}
+.noLink {
+  color: $text-color-primary !important;
+}
+.col-sm-12 .hp {
+  margin-right: 100px;
 }
 
+.list-unstyled li {
+  font-family: $font-title;
+  font-size: 1.2rem;
+}
+.list-unstyled li a {
+  font-family: $font-title;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
 
-.list-unstyled li{   
-    margin: 0;
+@each $red, $color in $redes {
+  .btn--#{$red} {
+    background-color: $color;
+  }
+}
+
+@media (max-width: map-get($breakpoints,"lg")) {
+  .list-unstyled li {
     font-family: $font-title;
     font-size: 1.2rem;
-  
-}
-.list-unstyled li a{
-    margin: 0;
+  }
+  .list-unstyled li a {
     font-family: $font-title;
     font-size: 1.2rem;
-    text-decoration: none;
-   
+  }
 }
 
-@media(max-width:$lg){
-    .list-unstyled li{   
-        margin: 0;
-        font-family: $font-title;
-        font-size: 1.2rem;
-    }
-    .list-unstyled li a{
-        margin: 0;
-        font-family: $font-title;
-        font-size: 1.2rem;
-    }
+@media (max-width: map-get($breakpoints,"md")) {
+  .list-unstyled li {
+    font-family: $font-title;
+    font-size: 1.2rem;
+    margin-left: 35%;
+    @include flex(grid, start, none);
+  }
+  .list-unstyled li a {
+    font-family: $font-title;
+    font-size: 1.2rem;
+  }
 }
-
-
-
-@media(max-width:$md){
-    .list-unstyled li{          
-        font-family: $font-title;
-        font-size: 1.2rem;
-        margin-left: 35%;
-        @include flex(grid,start,none);
-    }
-    .list-unstyled li a{
-        margin: 0;
-        font-family: $font-title;
-        font-size: 1.2rem;
-    }
+@media (max-width: map-get($breakpoints,"sm")) {
+  .list-unstyled li {
+    font-family: $font-title;
+    font-size: 1.1em;
+    margin-left: 10%;
+    @include flex(flex, start, none);
+  }
+  .list-unstyled li a {
+    font-family: $font-title;
+    font-size: 1.1rem;
+  }
 }
-@media(max-width:$sm){
-    .list-unstyled li{       
-        font-family: $font-title;
-        font-size: 1.1em;        
-        margin-left: 10%;
-        @include flex(flex,start,none);
-    }
-    .list-unstyled li a{
-        margin: 0;
-        font-family: $font-title;
-        font-size: 1.1rem;
-    }
-}
-@media(max-width:350px){
-    .list-unstyled li{        
-        font-family: $font-title;
-        font-size: 1rem;     
-        
-        @include flex(flex,start,none);
-    }
-    .list-unstyled  li a{
-     
-        font-family: $font-title;
-        font-size: 1rem;
-    }
-    
-}
+@media (max-width: 350px) {
+  .list-unstyled li {
+    font-family: $font-title;
+    font-size: 1rem;
 
+    @include flex(flex, start, none);
+  }
+  .list-unstyled li a {
+    font-family: $font-title;
+    font-size: 1rem;
+  }
+}
 
 /*li{
 display: flex;
