@@ -1,0 +1,27 @@
+
+@mixin flex($direction, $justify, $align){
+ display: flex;
+ flex-direction: $direction;
+ justify-content: $justify;
+ align-items: $align;
+}
+
+@mixin sizes($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+
+$list1: $color-card-one, $color-card-two, $color-card-three; 
+
+@mixin gradient($direction, $list) { 
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);  
+  }
+
+
+  @mixin  theme-colors($light-theme:true){
+    
+  }

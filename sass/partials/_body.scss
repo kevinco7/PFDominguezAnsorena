@@ -1,0 +1,87 @@
+body{
+  
+  font-family: $font-principal;  
+  background-color: $secondary;
+
+}
+.carousel-item{
+  max-height: 100vh;
+}
+
+.card {
+  border-radius: 40px 0 40px 0;
+  border-style: none;
+  @include gradient(left, $list1);
+
+  &-body {
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 40px 0;
+    
+  }
+  &-title{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+
+
+
+.btn {
+  margin-top: 50px;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 15px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  transition: all 0.3s;
+  box-shadow: 1px 1px 2px #0909095b, -2px -2px 5px #0909095b;  
+  &:hover {
+    border: 1px solid #d1793d !important;
+  }
+  &:active {
+    box-shadow: 1px 1px 2px #d1793d, -2px -2px 5px #c75c15;
+    background-color: #d1793d;
+  }
+}
+
+.form-control{
+  height: 3rem;
+  font-size: 30px;
+}
+
+.form-control:focus {
+  border-color: #d1793d;
+  box-shadow: inset 0 1px 1px rgba(255, 153, 0, 0.861),
+    0 0 8px rgba(255, 140, 0, 0.6);
+}
+
+
+.contentSection{
+  font-size: 16px;
+ 
+  & h2{
+    font-size: 30px;
+  }
+  & .images{
+    height: 500px;
+    width: 700px;
+    border-radius: 20px;
+  }
+}
+
+@media(max-width:$md){
+  .contentSection .images{
+    height: 100%;
+    width: 100%;
+  }
+}
+@media(max-width:$sm){
+  .contentSection .images{
+    height: 300px;
+    width: 100%;
+  }
+}
