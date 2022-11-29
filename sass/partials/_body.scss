@@ -6,20 +6,100 @@ body {
   max-height: 100vh;
 }
 
-.card {
-  border-radius: 40px 0 40px 0;
+.cardTanque {
+  border-radius: 35px 0 40px 0;
   border-style: none;
   @include gradient(left, $list1);
 
-  &-body {
-    background: rgb(255, 255, 255);
-    border-radius: 0 0 40px 0;
+  & .card-body {
+    background: $light-background;
+    border-radius: 0 0 35px 0;
   }
-  &-title {
+  & .card-title {
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
+  }
+}
+.cardSecondary {
+  border-radius: 35px 0 40px 0;
+  border-style: none;
+  height: 100%;
+  background: $light-background;
+  &-header {
+    font-size: 40px;
+  }
+
+  &-body {
+    border-radius: 0 0 35px 0;
+    .cardSecondary-text {
+      font-size: 16px;
+      text-align: start;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      margin: 10px;
+    }
+  }
+}
+
+.mapStyle {
+  border-radius: 20px;
+}
+
+.mapText {
+  text-align: center;
+  padding-top: 50px;
+  & h2 {
+    font-size: 25px;
+  }
+  & h4 {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+
+.btnContacto {
+  background: #090909;
+  cursor: pointer;
+  border: none;
+  padding: 14px 42px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg,
+      $color-card-one,
+      $primary,
+      $color-card-three,
+      orange,
+      rgb(246, 182, 6)
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+  }
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0% 0;
   }
 }
 
@@ -34,24 +114,51 @@ body {
   transition: all 0.3s;
   box-shadow: 1px 1px 2px #0909095b, -2px -2px 5px #0909095b;
   &:hover {
-    border: 1px solid #d1793d !important;
+    border: 1px solid $primary !important;
   }
   &:active {
-    box-shadow: 1px 1px 2px #d1793d, -2px -2px 5px #c75c15;
-    background-color: #d1793d;
+    box-shadow: 1px 1px 2px $primary, -2px -2px 5px #c75c15;
+    background-color: $primary;
   }
 }
 
-.form-control {
-  height: 3rem;
-  font-size: 30px;
+.accordion-item {
+  background-color: $text-color-primary;
+  color: $light-text;
+}
+.accordion-button {
+  font-size: 20px;
+
+  &:not(.collapsed) {
+    color: inherit;
+    background: $dark-background;
+    color: $primary;
+
+    &::after {
+      filter: brightness(0%) invert(100%);
+    }
+  }
 }
 
-.form-control:focus {
-  border-color: #d1793d;
-  box-shadow: inset 0 1px 1px rgba(255, 153, 0, 0.861),
-    0 0 8px rgba(255, 140, 0, 0.6);
+.form{
+
+  &-label{
+   font-size: 14px;
+  }
+  
+  &-control {
+    height: 50px;
+    font-size: 14px;
+  &:focus {
+    border-color: #d1793d;
+    box-shadow: inset 0 1px 1px rgba(255, 153, 0, 0.861),
+      0 0 8px rgba(255, 140, 0, 0.6);
+  }
+  }
 }
+
+
+
 
 .contentSection {
   font-size: 16px;
@@ -60,8 +167,8 @@ body {
     font-size: 30px;
   }
   & .images {
-    height: 500px;
-    width: 700px;
+    height: 480px;
+    width: 800px;
     border-radius: 20px;
   }
 }
