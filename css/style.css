@@ -162,6 +162,9 @@ body {
   background-color: #f8f8f8;
   color: #191a1bc1; }
 
+.accordion-body {
+  font-size: 16px; }
+
 .accordion-button {
   font-size: 20px; }
   .accordion-button:not(.collapsed) {
