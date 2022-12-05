@@ -107,7 +107,7 @@ body {
 
 .mapStyle {
   border-radius: 20px;
-  box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.5); }
 
 .mapText {
   text-align: center;
@@ -119,7 +119,7 @@ body {
     font-size: 16px; }
 
 .btnContacto {
-  background: #090909;
+  background: #1d1b1b;
   cursor: pointer;
   border: none;
   padding: 14px 42px;
@@ -168,7 +168,7 @@ body {
 
 .accordion-item {
   background-color: #f8f8f8;
-  color: #191a1bc1; }
+  color: #1d1b1b; }
 
 .accordion-body {
   font-size: 16px; }
@@ -200,7 +200,8 @@ body {
   .contentSection .images {
     height: 480px;
     width: 800px;
-    border-radius: 20px; }
+    border-radius: 20px;
+    box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.6); }
 
 @media (max-width: 767px) {
   .contentSection .images {
