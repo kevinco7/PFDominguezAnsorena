@@ -1,6 +1,6 @@
 body {
   font-family: $font-principal;
-  background-color: $secondary;
+  background-color: $body;
 }
 .carousel-item {
   max-height: 100vh;
@@ -10,25 +10,38 @@ body {
   border-radius: 35px 0 40px 0;
   border-style: none;
   @include gradient(left, $list1);
+  
+ 
 
   & .card-body {
     background: $light-background;
     border-radius: 0 0 35px 0;
+    box-shadow: 0 .9rem 1.0rem rgba(rgb(0, 0, 0), .20);
+    &:hover{
+      box-shadow: 0 .9rem 1.0rem rgba($primary, .60);
+    }
   }
   & .card-title {
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
+    
   }
 }
 .cardSecondary {
   border-radius: 35px 0 40px 0;
   border-style: none;
   height: 100%;
+  width: 80%;
   background: $light-background;
+  box-shadow: 0 .9rem 1.0rem rgba(rgb(0, 0, 0), .20);
+  &:hover{
+    box-shadow: -1px -1px 2px $primary, 2px 2px 5px #c75c15;
+  }
   &-header {
     font-size: 40px;
+
   }
 
   &-body {
@@ -45,11 +58,13 @@ body {
 
 .mapStyle {
   border-radius: 20px;
+  box-shadow: 0 .9rem 1.0rem rgba(rgb(0, 0, 0), .25);
 }
 
 .mapText {
   text-align: center;
   padding-top: 50px;
+  
   & h2 {
     font-size: 25px;
   }
@@ -58,6 +73,8 @@ body {
     font-size: 16px;
   }
 }
+
+
 
 .btnContacto {
   background: #090909;
@@ -164,10 +181,11 @@ body {
 
 
 .contentSection {
-  font-size: 16px;
+  font-size: 20px;
 
   & h2 {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
   }
   & .images {
     height: 480px;

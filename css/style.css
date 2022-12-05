@@ -61,7 +61,7 @@ html {
 
 body {
   font-family: "Barlow", "san-serif";
-  background-color: rgba(221, 219, 217, 0.606); }
+  background-color: #e6e4e4; }
 
 .carousel-item {
   max-height: 100vh; }
@@ -74,8 +74,11 @@ body {
   background: -o-linear-gradient(left, #f56200, #d1793d, #e95a0d);
   background: linear-gradient(left, #f56200, #d1793d, #e95a0d); }
   .cardTanque .card-body {
-    background: #f6f4f0;
-    border-radius: 0 0 35px 0; }
+    background: #ffffff;
+    border-radius: 0 0 35px 0;
+    box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.2); }
+    .cardTanque .card-body:hover {
+      box-shadow: 0 0.9rem 1rem rgba(209, 121, 61, 0.6); }
   .cardTanque .card-title {
     font-size: 20px;
     text-align: center;
@@ -86,7 +89,11 @@ body {
   border-radius: 35px 0 40px 0;
   border-style: none;
   height: 100%;
-  background: #f6f4f0; }
+  width: 80%;
+  background: #ffffff;
+  box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.2); }
+  .cardSecondary:hover {
+    box-shadow: -1px -1px 2px #d1793d, 2px 2px 5px #c75c15; }
   .cardSecondary-header {
     font-size: 40px; }
   .cardSecondary-body {
@@ -99,7 +106,8 @@ body {
       margin: 10px; }
 
 .mapStyle {
-  border-radius: 20px; }
+  border-radius: 20px;
+  box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.25); }
 
 .mapText {
   text-align: center;
@@ -185,9 +193,10 @@ body {
     box-shadow: inset 0 1px 1px rgba(255, 153, 0, 0.861), 0 0 8px rgba(255, 140, 0, 0.6); }
 
 .contentSection {
-  font-size: 16px; }
+  font-size: 20px; }
   .contentSection h2 {
-    font-size: 30px; }
+    font-size: 40px;
+    font-weight: bold; }
   .contentSection .images {
     height: 480px;
     width: 800px;
