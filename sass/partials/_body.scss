@@ -3,8 +3,9 @@ body {
   background-color: $body;
 }
 .carousel-item {
-  max-height: 100vh;
-  
+  // max-height: 100vh;
+  // min-height: 90vh;
+  height: 500px;
 }
 
 .cardTanque {
@@ -74,6 +75,8 @@ body {
     font-size: 16px;
   }
 }
+
+
 
 
 
@@ -181,30 +184,30 @@ body {
 
 
 
-.contentSection {
-  font-size: 20px;
+// .contentSection {
+//   font-size: 150px;
 
-  & h2 {
-    font-size: 40px;
-    font-weight: bold;
-  }
-  & .images {
-    height: 480px;
-    width: 800px;
-    border-radius: 20px;
-    box-shadow: 0 .9rem 1.0rem rgba(rgb(0, 0, 0), .60);
-  }
-}
+//   & h2 {
+//     font-size: 140px;
+//     font-weight: bold;
+//   }
+//   & .images {
+//     height: 600px;
+//     width: 1600px;
+//     border-radius: 0px;
+//     box-shadow: 0 .9rem 1.0rem rgba(rgb(0, 0, 0), .90);
+//   }
+// }
 
-@media (max-width: $md) {
-  .contentSection .images {
-    height: 100%;
-    width: 100%;
-  }
-}
-@media (max-width: $sm) {
-  .contentSection .images {
-    height: 300px;
-    width: 100%;
-  }
-}
+// @media (max-width: $md) {
+//   .contentSection .images {
+//     height: 100%;
+//     width: 100%;
+//   }
+// }
+// @media (max-width: $sm) {
+//   .contentSection .images {
+//     height: 300px;
+//     width: 100%;
+//   }
+// }

@@ -118,6 +118,20 @@ body {
     padding-top: 10px;
     font-size: 16px; }
 
+.cardSecondary-body a{
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+
+
+}
+.cardSecondary-header img{
+
+  filter: invert(61%) sepia(58%) saturate(746%) hue-rotate(342deg) brightness(101%) contrast(99%);
+
+
+}
+
 .btnContacto {
   background: #1d1b1b;
   cursor: pointer;
@@ -198,9 +212,12 @@ body {
     font-size: 40px;
     font-weight: bold; }
   .contentSection .images {
-    height: 480px;
-    width: 800px;
-    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+    height: 600px;
+    width: 1600px;
+    border-end-end-radius: 5px;
+    border-end-start-radius: 5px;
     box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.6); }
 
 @media (max-width: 767px) {
